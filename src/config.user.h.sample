@@ -1,0 +1,55 @@
+/*
+ User configuration file. Copy this file to config.user.h and add it to your
+ `.gitignore`.
+
+ You only have to `#define` what you want to override, the defaults are shown.
+ If you do not set SSID then all network configuration is skipped.
+ */
+
+#ifndef CONFIG_USER_H_
+#define CONFIG_USER_H_
+
+
+@define APP_NAME "cheesecave"
+
+#define SSID ""
+#define SSID_PASSWORD ""
+
+#define ENABLE_OTA 1
+#define OTA_PASSPHRASE ""
+
+#define MQTT_HOST ""
+#define MQTT_PORT "1883"
+#define MQTT_USERNAME ""
+#define MQTT_PASSWORD ""
+
+#define ENABLE_WEB_SERVER 1
+
+#define DEFAULT_TARGET_HUMID 90
+#define DEFAULT_TARGET_TEMP 10
+
+#define FRIDGE_PIN 13
+
+#define CAVE_NAME "Cheese Cave"
+
+#define NUM_DHT 1  /* Max 4 */
+
+#define DHT_1_PIN 16
+#define DHT_1_NAME CAVE_NAME " 1"
+#define DHT_1_MODEL esphomelib::sensor::DHT_MODEL_AUTO_DETECT
+
+#define DHT_2_PIN 17
+#define DHT_2_NAME CAVE_NAME " 2"
+#define DHT_2_MODEL esphomelib::sensor::DHT_MODEL_AUTO_DETECT
+
+#define DHT_3_PIN 18
+#define DHT_3_NAME CAVE_NAME " 3"
+#define DHT_3_MODEL esphomelib::sensor::DHT_MODEL_AUTO_DETECT
+
+#define DHT_4_PIN 19
+#define DHT_4_NAME CAVE_NAME " 4"
+#define DHT_4_MODEL esphomelib::sensor::DHT_MODEL_AUTO_DETECT
+
+
+
+#endif  /* CONFIG_USER_H_ */
